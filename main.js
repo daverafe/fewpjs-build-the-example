@@ -3,7 +3,20 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+EMPTY_HEART.addEventListener('click', emptyHeart)
 
+function emptyHeart() {
+  mimicServerCall().then(resp => resp.json()).then(handleServer).catch(handleError)
+
+  function handleServer() {
+
+  }
+
+  function handleError() {
+    
+  }
+
+}
 
 
 
